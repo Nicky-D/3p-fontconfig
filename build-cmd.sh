@@ -65,9 +65,8 @@ pushd "$FONTCONFIG_SOURCE_DIR"
 	    autoreconf
 	    export PKG_CONFIG_PATH=$stage/packages/lib/release/pkgconfig
 	    export CXXFLAGS="$opts"
-            export LDFLAGS="$opts -L$stage/packages/lib/release/"
 	    export FREETYPE_CFLAGS="-I$stage/packages/include/freetype2 -I$stage/packages/include/"
-            export LDFLAGS="$opts -L$stage/packages/lib/release/ -Wl,--exclude-libs,libz:libxml2:libexpat:libfreetype"
+            export LDFLAGS="$opts -L$stage/packages/lib/release/ -lm -Wl,--exclude-libs,libz:libxml2:libexpat:libfreetype"
 	    
             CFLAGS="$opts" \
                 ./configure \
