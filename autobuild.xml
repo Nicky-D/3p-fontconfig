@@ -1,213 +1,129 @@
 <?xml version="1.0" ?>
 <llsd>
 <map>
+    <key>version</key>
+    <string>1.3</string>
+    <key>type</key>
+    <string>autobuild</string>
     <key>installables</key>
     <map>
       <key>expat</key>
       <map>
-        <key>copyright</key>
-        <string>Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd and Clark Cooper - Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Expat maintainers.</string>
-        <key>description</key>
-        <string>Expat is an XML parser library written in C</string>
+        <key>platforms</key>
+        <map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>4cd82e2dec06ddff19e9b3dc0254f2593ec80452</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
+              <key>url</key>
+              <string>https://github.com/secondlife/3p-expat/releases/download/v2.1.1.1f36d02/expat-2.1.1.1f36d02-linux64-1f36d02.tar.zst</string>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
+          </map>
+        </map>
         <key>license</key>
         <string>expat</string>
         <key>license_file</key>
         <string>LICENSES/expat.txt</string>
+        <key>copyright</key>
+        <string>Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd and Clark Cooper - Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Expat maintainers.</string>
+        <key>version</key>
+        <string>2.1.1.1f36d02</string>
         <key>name</key>
         <string>expat</string>
+        <key>description</key>
+        <string>Expat is an XML parser library written in C</string>
+      </map>
+      <key>freetype</key>
+      <map>
         <key>platforms</key>
         <map>
-          <key>linux</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>20976bed8203a5ad365b3196882877aa</string>
-              <key>url</key>
-              <string>http://automated-builds-secondlife-com.s3.amazonaws.com/hg/repo/p64_3p-expat/rev/313711/arch/Linux/installer/expat-2.1.1.313711-linux-313711.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux</string>
-          </map>
           <key>linux64</key>
           <map>
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>2e9d90adc83683a5d9fba9f999418a64</string>
+              <string>4a999279562e8f3e4ba02d3e78a844ddf6fe18f1</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>jf://packages/linux64/expat-2.1.1.221621521-linux64_bionic-221621521.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-freetype/releases/download/v.2.12.1.557becd/freetype-2.12.1.557becd-linux64-557becd.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
           </map>
         </map>
-        <key>version</key>
-        <string>2.1.1.221621521</string>
-      </map>
-      <key>freetype</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright 2006, 2007, 2008, 2009, 2010 by David Turner, Robert Wilhelm, and Werner Lemberg.</string>
-        <key>description</key>
-        <string>Font rendering library</string>
         <key>license</key>
         <string>FreeType</string>
         <key>license_file</key>
         <string>LICENSES/freetype.txt</string>
+        <key>copyright</key>
+        <string>Copyright 2006, 2007, 2008, 2009, 2010 by David Turner, Robert Wilhelm, and Werner Lemberg.</string>
+        <key>version</key>
+        <string>2.12.1.557becd</string>
         <key>name</key>
         <string>freetype</string>
-        <key>platforms</key>
-        <map>
-          <key>linux</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>1b401394106cedc86926bd488f5aa45e</string>
-              <key>url</key>
-              <string>http://automated-builds-secondlife-com.s3.amazonaws.com/hg/repo/p64_3p-freetype/rev/314215/arch/Linux/installer/freetype-2.4.4.314215-linux-314215.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux</string>
-          </map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>94acb2c8c87de299215f5963e821fa17</string>
-              <key>url</key>
-              <string>jf://packages/linux64/freetype-2.12.1.221612253-linux64_bionic-221612253.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux64</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>2.12.1.221612253</string>
-      </map>
-      <key>libuuid</key>
-      <map>
-        <key>copyright</key>
-        <string>Copyright (c) 2004-2008 The OSSP Project &lt;http://www.ossp.org/&gt;</string>
         <key>description</key>
-        <string>OSSP uuid is a ISO-C:1999 application programming interface (API) and corresponding command line interface (CLI) for the generation of DCE 1.1, ISO/IEC 11578:1996 and RFC 4122 compliant Universally Unique Identifier (UUID). </string>
-        <key>license</key>
-        <string>UUID</string>
-        <key>license_file</key>
-        <string>LICENSES/uuid.txt</string>
-        <key>name</key>
-        <string>libuuid</string>
-        <key>platforms</key>
-        <map>
-          <key>linux64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>50f88582b1732d0a3b8023795701a03b</string>
-              <key>url</key>
-              <string>jf://packages/linux64/libuuid-1.6.2-linux64_bionic-221732144.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>linux64</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>1.6.2</string>
+        <string>Font rendering library</string>
       </map>
       <key>zlib-ng</key>
       <map>
-        <key>canonical_repo</key>
-        <string>https://bitbucket.org/nickyd/3p-zlib-ng</string>
-        <key>copyright</key>
-        <string>Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler</string>
-        <key>description</key>
-        <string>zlib data compression library for the next generation systems</string>
+        <key>platforms</key>
+        <map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>fba88375e12454ae19f4528e11ffc7ddf7d879ec</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
+              <key>url</key>
+              <string>https://github.com/secondlife/3p-zlib-ng/releases/download/v1.2.11.zlib-ng.32fd361/zlib_ng-1.2.11.zlib-ng.32fd361-linux64-32fd361.tar.zst</string>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
+          </map>
+        </map>
         <key>license</key>
         <string>zlib-ng</string>
         <key>license_file</key>
         <string>LICENSES/zlib-ng.txt</string>
+        <key>copyright</key>
+        <string>Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler</string>
+        <key>version</key>
+        <string>1.2.11.zlib-ng.32fd361</string>
         <key>name</key>
         <string>zlib-ng</string>
-        <key>platforms</key>
-        <map>
-          <key>darwin64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>bf306e38bf81c6095e0967bdef6a2445</string>
-              <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87759/805718/zlib_ng-2.0.5.563838-darwin64-563838.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>darwin64</string>
-          </map>
-          <key>windows</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>8ffce5bd00e3d5afa8cb39b855237c4a</string>
-              <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87761/805730/zlib_ng-2.0.5.563838-windows-563838.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>windows</string>
-          </map>
-          <key>windows64</key>
-          <map>
-            <key>archive</key>
-            <map>
-              <key>hash</key>
-              <string>bd103a9129e57f7ea35886bc7750f8a6</string>
-              <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87760/805729/zlib_ng-2.0.5.563838-windows64-563838.tar.bz2</string>
-            </map>
-            <key>name</key>
-            <string>windows64</string>
-          </map>
-        </map>
-        <key>version</key>
-        <string>2.0.5.563838</string>
+        <key>canonical_repo</key>
+        <string>https://github.com/secondlife/3p-zlib-ng</string>
+        <key>description</key>
+        <string>zlib data compression library for the next generation systems</string>
       </map>
     </map>
-    <key>orig_ver</key>
-    <string>1.2</string>
     <key>package_description</key>
     <map>
-      <key>canonical_repo</key>
-      <string>https://bitbucket.org/nickyd/3p-fontconfig</string>
-      <key>copyright</key>
-      <string>Copyright (C) 2000,2001,2002,2003,2004,2006,2007 Keith Packard, 2005 Patrick Lam, 2009 Roozbeh Pournader, 2008,2009 Red Hat, Inc., 2008 Danilo Šegan, 2012 Google, Inc.</string>
-      <key>description</key>
-      <string>Fontconfig is a library for configuring and customizing font access.</string>
-      <key>license</key>
-      <string>bsd</string>
-      <key>license_file</key>
-      <string>LICENSES/fontconfig.txt</string>
-      <key>name</key>
-      <string>fontconfig</string>
       <key>platforms</key>
       <map>
         <key>linux</key>
         <map>
-          <key>build_directory</key>
-          <string>stage</string>
           <key>configurations</key>
           <map>
             <key>Release</key>
             <map>
               <key>build</key>
               <map>
+                <key>command</key>
+                <string>bash</string>
                 <key>arguments</key>
                 <array>
                   <string>../build-cmd.sh</string>
-                </array>
-                <key>command</key>
-                <string>bash</string>
+</array>
               </map>
               <key>default</key>
               <string>True</string>
@@ -221,17 +137,29 @@
             <string>lib/release/*.a</string>
             <string>lib/release/*.so*</string>
             <string>docs/fontconfig/README.Linden</string>
-          </array>
+</array>
+          <key>build_directory</key>
+          <string>stage</string>
           <key>name</key>
           <string>linux</string>
         </map>
       </map>
+      <key>license</key>
+      <string>bsd</string>
+      <key>license_file</key>
+      <string>LICENSES/fontconfig.txt</string>
+      <key>copyright</key>
+      <string>Copyright (C) 2000,2001,2002,2003,2004,2006,2007 Keith Packard, 2005 Patrick Lam, 2009 Roozbeh Pournader, 2008,2009 Red Hat, Inc., 2008 Danilo Šegan, 2012 Google, Inc.</string>
       <key>version_file</key>
       <string>VERSION.txt</string>
+      <key>name</key>
+      <string>fontconfig</string>
+      <key>canonical_repo</key>
+      <string>https://github.com/secondlife/3p-fontconfig</string>
+      <key>description</key>
+      <string>Fontconfig is a library for configuring and customizing font access.</string>
     </map>
-    <key>type</key>
-    <string>autobuild</string>
-    <key>version</key>
-    <string>1.3</string>
+    <key>orig_ver</key>
+    <string>1.2</string>
   </map>
 </llsd>
