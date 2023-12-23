@@ -66,8 +66,9 @@ pushd "$FONTCONFIG_SOURCE_DIR"
 	    export PKG_CONFIG_PATH=$stage/packages/lib/release/pkgconfig
 	    export CXXFLAGS="$opts"
 	    export FREETYPE_CFLAGS="-I$stage/packages/include/freetype2 -I$stage/packages/include/"
-            export LDFLAGS="$opts -L$stage/packages/lib/release/ -lm -Wl,--exclude-libs,libz:libxml2:libexpat:libfreetype"
-	    
+        export LDFLAGS="$opts -L$stage/packages/lib/release/ -Wl,--exclude-libs,libz:libxml2:libexpat:libfreetype"
+        export FREETYPE_LIBS="-lfreetype -lm"
+
             CFLAGS="$opts" \
                 ./configure \
                 --enable-static --enable-shared --disable-docs \
@@ -75,7 +76,7 @@ pushd "$FONTCONFIG_SOURCE_DIR"
                 --with-expat-includes="$stage"/packages/include/expat/ \
                 --with-expat-lib="$stage"/packages/lib/release/ \
                 --prefix="$stage" --libdir="$stage"/lib/release/
-            make 
+            make -j`nproc`
             make install
 
             # conditionally run unit tests
